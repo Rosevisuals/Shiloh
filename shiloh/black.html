@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiloh Accessories</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Source+Sans+3:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class=" text-white p-3 text-center">
+        <nav class="navbar navbar-expand-md navbar-dark ">
+            <img src="images/SHILOH-WHITE-(T)-1.png" alt="Shiloh Accessories" class="img-fluid logo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item"><a class="text-white nav-link" href="black.html">Home</a></li>
+                    <li class="nav-item"><a class="text-white nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class=" text-white nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class=" text-white nav-link" href="order.html">Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--<div class="text-center my-4">
+        <img src="images/SHILOH-WHITE-(T)-1.png" alt="Shiloh Accessories" class="img-fluid">
+    </div>-->
+
+    <div class="container text-center">
+        <h1 class="text-white">Shiloh Accessories</h1>
+        <p class="text-white">Stylish. Unique. Fashionable.</p>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class=" text-white text-center mb-4">Featured Collections</h2>
+        <div class="row" id="featuredCollections">
+            <!-- Featured collections will be inserted here by JavaScript -->
+        </div>
+    </div>
+
+    <div class="hero-section text-center">
+        <h1 class="text-white">Discover Our Latest Collection</h1>
+        <p class="text-white">Stylish and protective phone cases for every taste.</p>
+        <a href="order.html" class="btn btn-outline-light btn-lg mt-3">Shop Now</a>
+    </div>
+    
+
+    <div class="container-fluid  text-white py-5">
+        <div class="container">
+            <p class="lead text-center">"Welcome to Shiloh Accessories, your one-stop destination for premium phone cases and accessories! At Shiloh, we believe that protecting your device should never compromise on style. From sleek designs to personalized options, we have something for everyone. Explore our collection today and elevate your device with Shiloh Accessories."</p>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <h2 class=" text-white text-center mb-4">Product Gallery</h2>
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <select class="form-control" id="filterCategory">
+                    <option value="">All Categories</option>
+                    <option value="leather">Leather</option>
+                    <option value="silicone">Silicone</option>
+                    <option value="clear">Clear</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <select class="form-control" id="filterPrice">
+                    <option value="">All Prices</option>
+                    <option value="0-10">$0 - $10</option>
+                    <option value="10-20">$10 - $20</option>
+                    <option value="20-30">$20 - $30</option>
+                </select>
+            </div>
+        </div>
+        <div class="row" id="productGallery">
+            <!-- Product items will be inserted here by JavaScript -->
+        </div>
+    </div>
+    
+
+
+   <!-- <div class="container my-5">
+        <h2 class="text-center mb-4">Customer Testimonials</h2>
+        <div class="row text-center">
+            <div class="col-sm-6 col-md-3 mb-4">
+                <img src="images/man.jpg" alt="David R." class="img-fluid rounded-circle mb-2" style="width: 150px; height: 150px;">
+                <p>"I recently purchased a customized phone case from Shiloh Accessories, and I couldn't be happier with my purchase. The quality is fantastic, I get compliments on it all the time!" - David R.</p>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-4">
+                <img src="images/confident.jpg" alt="Customer" class="img-fluid rounded-circle mb-2" style="width: 150px; height: 150px;">
+                <p>"I've been a loyal customer of Shiloh Accessories for years, and I can't recommend them enough! Their phone cases provide excellent protection for my device. Plus, their customer service is top-notch!"</p>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-4">
+                <img src="images/handsome.jpg" alt="Michael S." class="img-fluid rounded-circle mb-2" style="width: 150px; height: 150px;">
+                <p>"I've tried many different phone cases over the years, but none compare to the ones from Shiloh Accessories. I won't buy phone cases from anywhere else!" - Michael S.</p>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-4">
+                <img src="images/beautiful.jpg" alt="Jessica K." class="img-fluid rounded-circle mb-2" style="width: 150px; height: 150px;">
+                <p>"Shiloh Accessories exceeded my expectations in every way. Their website was easy to navigate, and the ordering process was seamless. I received my phone case quickly." - Jessica K.</p>
+            </div>
+        </div>
+    </div>-->
+
+
+    <div class="container mt-5">
+        <h2 class=" text-white text-center mb-4">Customer Reviews</h2>
+        <div class="row" id="customerReviews">
+            <!-- Reviews will be inserted here by JavaScript -->
+        </div>
+        <div class="mt-4">
+            <h4 class="text-white">Leave a Review</h4>
+            <form id="reviewForm">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="reviewName" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="reviewText" rows="3" placeholder="Your Review" required></textarea>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="reviewRating" required>
+                        <option value="">Rate the Product</option>
+                        <option value="5">5 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="2">2 Stars</option>
+                        <option value="1">1 Star</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-outline-dark">Submit Review</button>
+            </form>
+        </div>
+    </div>
+    
+
+    
+    
+    <div class="container mt-5">
+        <h2 class=" text-white text-center mb-4">Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <input type="text" class="form-control" id="contactName" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" id="contactEmail" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="contactMessage" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-dark">Send Message</button>
+        </form>
+        <p id="contactFormMessage" class="mt-3"></p>
+    </div>
+    
+
+
+    <div class="container mt-5">
+        <h2 class=" text-white text-center mb-4">Frequently Asked Questions</h2>
+        <div id="faqAccordion" class="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What is your return policy?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        We offer a 30-day return policy on all products. Please contact our support team for more details.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How long does delivery take?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Shipping typically takes 3-5 business days within the US. International shipping times may vary.
+                    </div>
+                </div>
+            </div>
+            <!-- Add more FAQ items as needed -->
+        </div>
+    </div>
+
+    <footer class=" text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Shiloh Accessories</h5>
+                    <p>Our carefully curated collection combines fashion-forward designs with high-quality materials to ensure your device stays protected in style.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Newsletter Sign Up</h5>
+                    <form id="newsletterForm">
+                        <div class="input-group">
+                            <input type="email" id="emailInput" class="form-control" placeholder="Enter your email address" required>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-light" type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                        <p id="newsletterMessage"></p>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Facebook</a></li>
+                        <li><a href="#" class="text-white">Instagram</a></li>
+                        <li><a href="#" class="text-white">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <p>&copy; 2024 Shiloh Accessories. All rights reserved. | <a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Service</a></p>
+        </div>
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+    const imagePath = "images/images/";
+    const featuredCollectionsData = [
+        { name: "Transparent", image: "64.png" },
+        { name: "Colored", image: "98.png" },
+        { name: "Plain", image: "plain.png" },
+    ];
+
+    const featuredCollectionsContainer = document.getElementById("featuredCollections");
+
+    featuredCollectionsData.forEach(collection => {
+        const collectionItem = document.createElement("div");
+        collectionItem.classList.add("col-sm-12", "col-md-4", "mb-4", "collection-item");
+
+        collectionItem.innerHTML = `
+            <div class="card">
+                <img src="${imagePath}${collection.image}" class="card-img-top" alt="${collection.name}" style="width:100%; height:auto;">
+                <div class="card-body">
+                    <h5 class="card-title">${collection.name}</h5>
+                    <a href="#" class="btn btn-dark">Explore</a>
+                </div>
+            </div>
+        `;
+        featuredCollectionsContainer.appendChild(collectionItem);
+    });
+
+    document.getElementById("newsletterForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        var email = document.getElementById("emailInput").value;
+        if (isValidEmail(email)) {
+            simulateFormSubmission(email);
+        } else {
+            document.getElementById("newsletterMessage").innerText = "Please enter a valid email address";
+        }
+    });
+
+    function isValidEmail(email) {
+        return /\S+@\S+\.\S+/.test(email);
+    }
+
+    function simulateFormSubmission(email) {
+        document.getElementById("newsletterMessage").innerText = "Thank you for subscribing!";
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const products = [
+        { name: "Classic Black Case", category: "leather", price: 15.99, imageUrl: "images/images/56.png" },
+        { name: "Elegant Marble Case", category: "silicone", price: 19.99, imageUrl: "images/images/marble.png" },
+        { name: "Transparent Clear Case", category: "clear", price: 12.99, imageUrl: "images/images/clear.png" },
+        { name: "Luxury Leather Case", category: "leather", price: 25.99, imageUrl: "images/images/leather.png" },
+        { name: "Slim Silicone Case", category: "silicone", price: 14.99, imageUrl: "images/images/silicone.png" },
+        { name: "Crystal Clear Case", category: "clear", price: 10.99, imageUrl: "images/images/clear copy.png" }
+    ];
+
+    const productGallery = document.getElementById("productGallery");
+
+    function displayProducts(filteredProducts) {
+        productGallery.innerHTML = "";
+        filteredProducts.forEach(product => {
+            const productItem = document.createElement("div");
+            productItem.classList.add("col-sm-12", "col-md-4", "mb-4");
+            productItem.innerHTML = `
+                <div class="card">
+                    <img src="${product.imageUrl}" class="card-img-top" alt="${product.name}" style="width:100%; height:auto;">
+                    <div class="card-body">
+                        <h5 class="card-title">${product.name}</h5>
+                        <p class="card-text">$${product.price.toFixed(2)}</p>
+                        <a href="#" class="btn btn-dark">Buy Now</a>
+                    </div>
+                </div>
+            `;
+            productGallery.appendChild(productItem);
+        });
+    }
+
+    function filterProducts() {
+        const category = document.getElementById("filterCategory").value;
+        const price = document.getElementById("filterPrice").value;
+        let filteredProducts = products;
+
+        if (category) {
+            filteredProducts = filteredProducts.filter(product => product.category === category);
+        }
+
+        if (price) {
+            const [min, max] = price.split('-').map(Number);
+            filteredProducts = filteredProducts.filter(product => product.price >= min && product.price <= max);
+        }
+
+        displayProducts(filteredProducts);
+    }
+
+    document.getElementById("filterCategory").addEventListener("change", filterProducts);
+    document.getElementById("filterPrice").addEventListener("change", filterProducts);
+
+    displayProducts(products);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const reviews = [
+        { name: "Alice", text: "Great quality case! Highly recommend.", rating: 5 },
+        { name: "Bob", text: "Good value for money.", rating: 4 }
+    ];
+
+    const customerReviews = document.getElementById("customerReviews");
+
+    function displayReviews() {
+        customerReviews.innerHTML = "";
+        reviews.forEach(review => {
+            const reviewItem = document.createElement("div");
+            reviewItem.classList.add("col-md-6", "mb-4");
+            reviewItem.innerHTML = `
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">${review.name}</h5>
+                        <p class="card-text">${review.text}</p>
+                        <p class="card-text">${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</p>
+                    </div>
+                </div>
+            `;
+            customerReviews.appendChild(reviewItem);
+        });
+    }
+
+    document.getElementById("reviewForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const name = document.getElementById("reviewName").value;
+        const text = document.getElementById("reviewText").value;
+        const rating = parseInt(document.getElementById("reviewRating").value);
+        reviews.push({ name, text, rating });
+        displayReviews();
+        document.getElementById("reviewForm").reset();
+    });
+
+    displayReviews();
+});
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const name = document.getElementById("contactName").value;
+    const email = document.getElementById("contactEmail").value;
+    const message = document.getElementById("contactMessage").value;
+
+    // Simulate form submission
+    document.getElementById("contactFormMessage").innerText = "Thank you, " + name + "! Your message has been sent.";
+    document.getElementById("contactForm").reset();
+});
+
+    </script>
+</body>
+</html>

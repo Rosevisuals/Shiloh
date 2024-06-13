@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiloh Accessories</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Source+Sans+3:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-dark ">
+        <img src="images/SHILOH-WHITE-(T)-1.png" alt="Shiloh Accessories" class="img-fluid logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="black.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="order.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+
+    <div class="content container text-center">
+        <h1 class="text-white">Shiloh Accessories</h1>
+        <p class="text-white">Stylish. Unique. Fashionable.</p>
+    </div>
+    
+    <main>
+        <section id="contact" class="container">
+            <div class="customer my-4">
+                <h2 class="text-white">Contact Us</h2>
+                <p class="text-white thankyou">Thank you for your interest in Shiloh Accessories!
+                    We're here to assist you with any inquiries or concerns you may have.
+                    Please feel free to reach out to us using any of the following methods:
+                </p>
+            </div>
+            <div class="time my-4">
+                <h3 class="text-white">Customer Service Hours</h3>
+                <p class=" text-white clock">Monday - Friday: 9:00 AM - 5:00 PM</p>
+            </div>
+            <div class="phone my-4">
+                <h3 class="text-white">Phone</h3>
+                <p class="text-white assist">For assistance with orders or general inquiries, please call us at +256-741-814-597.</p>
+            </div>
+            <div class="email my-4">
+                <h3 class="text-white">Email</h3>
+                <p class="text-white info">You can also reach us via email at info@shilohaccessories.com. We strive to respond to all emails within 24 hours.</p>
+            </div>
+            <div class="social my-4">
+                <h3 class="text-white media">Social Media</h3>
+                <ul class="list-inline">
+                    <li class="text-white list-inline-item"><a href="#">Facebook</a></li>
+                    <li class="text-white list-inline-item"><a href="#">Instagram</a></li>
+                    <li class="text-white list-inline-item"><a href="#">Whatsapp</a></li>
+                </ul>
+            </div>
+            <div class="value my-4">
+                <h3 class="text-white">Feedback</h3>
+                <p class="text-white form">We value your feedback! If you have any suggestions or comments about our products or services, please let us know by filling out the form below:</p>
+
+                <form action="submit_feedback.php" method="post" class="feedback-form">
+                    <div class="text-white form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="text-white form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="text-white form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" class="form-control">
+                    </div>
+                    <div class="text-white form-group">
+                        <label for="satisfaction">Overall Satisfaction:</label>
+                        <select id="satisfaction" name="satisfaction" class="form-control" required>
+                            <option value="Very Satisfied">Very Satisfied</option>
+                            <option value="Satisfied">Satisfied</option>
+                            <option value="Neutral">Neutral</option>
+                            <option value="Dissatisfied">Dissatisfied</option>
+                            <option value="Very Dissatisfied">Very Dissatisfied</option>
+                        </select>
+                    </div>
+                    <div class="text-white form-group">
+                        <label for="recommend">Likelihood to Recommend:</label>
+                        <select id="recommend" name="recommend" class="form-control" required>
+                            <option value="Very Likely">Very Likely</option>
+                            <option value="Likely">Likely</option>
+                            <option value="Neutral">Neutral</option>
+                            <option value="Unlikely">Unlikely</option>
+                            <option value="Very Unlikely">Very Unlikely</option>
+                        </select>
+                    </div>
+                    <div class="text-white form-group">
+                        <label for="liked">What did you like most about your experience?</label>
+                        <textarea id="liked" name="liked" rows="4" class="form-control" required></textarea>
+                    </div>
+                    <div class="text-white form-group">
+                        <label for="improve">What could we improve on?</label>
+                        <textarea id="improve" name="improve" rows="4" class="form-control" required></textarea>
+                    </div>
+                    <div class="text-white form-group">
+                        <label for="comments">Additional Comments or Suggestions:</label>
+                        <textarea id="comments" name="comments" rows="4" class="form-control"></textarea>
+                    </div>
+                    <div class="text-white form-group">
+                        <label for="contact">Would you like to be contacted regarding your feedback?</label>
+                        <div class="form-check">
+                            <input type="checkbox" id="contact" name="contact" value="yes" class="form-check-input">
+                            <label for="contact" class="form-check-label">Yes</label>
+                        </div>
+                    </div>
+                    <div class="text-white form-group">
+                        <label for="contactMethod">Preferred Contact Method:</label>
+                        <div class="form-check">
+                            <input type="checkbox" id="emailContact" name="emailContact" value="Email" class="form-check-input">
+                            <label for="emailContact" class="form-check-label">Email</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="phoneContact" name="phoneContact" value="Phone" class="form-check-input">
+                            <label for="phoneContact" class="form-check-label">Phone</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Submit" class="btn btn-dark">
+                    </div>
+                </form> 
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class=" text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Shiloh Accessories</h5>
+                    <p>Our carefully curated collection combines fashion-forward designs with high-quality materials to ensure your device stays protected in style.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Newsletter Sign Up</h5>
+                    <form id="newsletterForm">
+                        <div class="input-group">
+                            <input type="email" id="emailInput" class="form-control" placeholder="Enter your email address" required>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-light" type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                        <p id="newsletterMessage"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <p>&copy; 2024 Shiloh Accessories. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

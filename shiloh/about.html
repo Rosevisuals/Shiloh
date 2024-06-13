@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Shiloh Accessories</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Source+Sans+3:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-dark ">
+        <img src="images/SHILOH-WHITE-(T)-1.png" alt="Shiloh Accessories" class="img-fluid logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class=" text-white nav-link" href="black.html">Home</a></li>
+                <li class="nav-item"><a class=" text-white nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class=" text-white nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class=" text-white nav-link" href="order.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+     
+   
+    <div class="content container text-center">
+        <h1 class="text-white">Shiloh Accessories</h1>
+        <p class="text-white">Stylish. Unique. Fashionable.</p>
+    </div>
+
+    <!-- Main content area -->
+    <main>
+        <section id="about" class="container">
+            <div class="about-us">
+                <h1 class="text-dark">About Us</h1>
+                <p class=" text-dark welcome" id="intro"></p>
+                <p class=" text-dark mission" id="mission"></p>
+            </div>
+            <div class="about-us">
+                <h2 class=" text-dark craft">Quality and Craftsmanship</h2>
+                <p class=" text-dark welcome" id="story"></p>
+                <p class="text-dark mission" id="driven"></p>
+            </div>
+            <div class="about-us">
+                <h2 class="text-dark">Personalization</h2>
+                <p id="quality" class=" text-dark whole"></p>
+            </div>
+            <div class="about-us">
+                <h2 class="text-dark">Customer Satisfaction</h2>
+                <p class=" text-dark welcome" id="groove"></p>
+            </div>
+            <div class="about-us">
+                <h2 class="text-dark">Get in Touch</h2>
+                <p class=" text-dark welcome2" id="question2"> </p><a href="contact.html" class="contact">here.</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class=" text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Shiloh Accessories</h5>
+                    <p>Our carefully curated collection combines fashion-forward designs with high-quality materials to ensure your device stays protected in style.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Newsletter Sign Up</h5>
+                    <form id="newsletterForm">
+                        <div class="input-group">
+                            <input type="email" id="emailInput" class="form-control" placeholder="Enter your email address" required>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-light" type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                        <p id="newsletterMessage"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <p>&copy; 2024 Shiloh Accessories. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const introText = "Welcome to Shiloh Accessories, where we believe that your phone case should be as unique as you are. Established with a passion for merging style and functionality, Shiloh Accessories is your go-to destination for premium phone cases and accessories.";
+    let introIndex = 0;
+
+    function typeIntroText() {
+        if (introIndex < introText.length) {
+            document.getElementById("intro").innerHTML += introText.charAt(introIndex);
+            introIndex++;
+            setTimeout(typeIntroText, 50); // Adjust the typing speed (milliseconds)
+        }
+    }
+
+    typeIntroText();
+
+    const missionText = "Our mission at Shiloh Accessories is simple: to provide our customers with the highest quality phone cases that not only protect their devices but also reflect their personal style.";
+    let missionIndex = 0;
+
+    function typeMissionText() {
+        if (missionIndex < missionText.length) {
+            document.getElementById("mission").innerHTML += missionText.charAt(missionIndex);
+            missionIndex++;
+            setTimeout(typeMissionText, 50); // Adjust the typing speed (milliseconds)
+        }
+    }
+
+    typeMissionText();
+
+    const storyText = "At Shiloh Accessories, we take pride in the craftsmanship of our products. Each phone case is meticulously designed and crafted using durable materials to ensure long-lasting protection for your device. From rugged cases for outdoor adventurers to sleek designs for urban trendsetters, our collection is thoughtfully curated to meet the diverse needs of our customers.";
+    let storyIndex = 0;
+
+    function typeStoryText() {
+        if (storyIndex < storyText.length) {
+            document.getElementById("story").innerHTML += storyText.charAt(storyIndex);
+            storyIndex++;
+            setTimeout(typeStoryText, 50);
+        }
+    }
+
+    typeStoryText();
+
+    const drivenText = "Driven by our passion for style and innovation, we are constantly striving to bring you the most coveted pieces from top designers and emerging talents alike.";
+    let drivenIndex = 0;
+
+    function typeDrivenText() {
+        if (drivenIndex < drivenText.length) {
+            document.getElementById("driven").innerHTML += drivenText.charAt(drivenIndex);
+            drivenIndex++;
+            setTimeout(typeDrivenText, 50);
+        }
+    }
+
+    typeDrivenText();
+
+    const qualityText = "We believe that personalization is key to making your phone truly yours. That's why we offer a range of customization options, allowing you to add your own personal touch to your phone case. Whether you want to showcase your favorite photos, express your creativity with custom artwork, or simply add your initials, the possibilities are endless with Shiloh Accessories.";
+    let qualityIndex = 0;
+
+    function typeQualityText() {
+        if (qualityIndex < qualityText.length) {
+            document.getElementById("quality").innerHTML += qualityText.charAt(qualityIndex);
+            qualityIndex++;
+            setTimeout(typeQualityText, 50);
+        }
+    }
+
+    typeQualityText();
+
+    const grooveText = "At Shiloh Accessories, customer satisfaction is our top priority. We are dedicated to providing exceptional service and support to ensure that every customer has a positive experience shopping with us. Whether you have a question about our products or need assistance with your order, our friendly and knowledgeable team is here to help.";
+    let grooveIndex = 0;
+
+    function typeGrooveText() {
+        if (grooveIndex < grooveText.length) {
+            document.getElementById("groove").innerHTML += grooveText.charAt(grooveIndex);
+            grooveIndex++;
+            setTimeout(typeGrooveText, 50);
+        }
+    }
+
+    typeGrooveText();
+
+    const question2Text = "Have questions or feedback? We'd love to hear from you! Contact us";
+    let question2Index = 0;
+
+    function typeQuestion2Text() {
+        if (question2Index < question2Text.length) {
+            document.getElementById("question2").innerHTML += question2Text.charAt(question2Index);
+            question2Index++;
+            setTimeout(typeQuestion2Text, 50);
+        }
+    }
+
+    typeQuestion2Text();
+});
+
+    </script>
+</body>
+</html>
